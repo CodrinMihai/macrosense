@@ -7,6 +7,8 @@ import AboutPage from './pages/AboutPage';
 import FeaturesPage from './pages/FeaturesPage';
 import PitchPage from './pages/PitchPage';
 import ContactPage from './pages/ContactPage';
+import PricingPage from './pages/PricingPage';
+
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
             <Route path="/features" element={<FeaturesPage />} />
             <Route path="/pitch" element={<PitchPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/pricing" element={<PricingPage />} />
           </Routes>
         </div>
         <Footer />

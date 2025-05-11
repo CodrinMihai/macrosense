@@ -19,13 +19,36 @@ const AboutPage = () => {
 
       <div className="mt-16 w-full max-w-4xl">
         <img
-          src="\images\health-4-logo.png"
+          src="/images/health-4-logo.png"
           alt="MacroSense Mission"
-          className="w-21 rounded-xl shadow-md object-cover animate-fade-in"
+          className="w-full rounded-xl shadow-md object-cover animate-fade-in"
         />
+      </div>
+
+      {/* Feature Descriptions */}
+      <div className="mt-24 max-w-5xl w-full">
+        <h2 className="text-4xl font-semibold mb-10 text-center">What We Offer</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <Feature title="Macro Calculator" text="Quickly calculate your ideal daily intake of proteins, carbs, and fats based on your goal. Simple, fast, and tailored to your needs." />
+          <Feature title="Limited Tracking" text="Log your daily meals and monitor your macros without getting overwhelmed. Ideal for beginners who want structure without complexity." />
+          <Feature title="Community Access" text="Be part of a supportive and growing group of people with similar goals. Ask questions, exchange ideas, and stay motivated." />
+          <Feature title="Ad-Free Experience" text="Enjoy the app without distractions. With paid plans, your experience is clean, focused, and uninterrupted." />
+          <Feature title="AI Recommendations" text="Receive dynamic suggestions based on your progress, body changes, and habits. The more you use it, the smarter it gets." />
+          <Feature title="Lifetime Access" text="Pay once and enjoy full access forever. No recurring costs, just total control over your nutrition." />
+          <Feature title="Nutrition Coach" text="Work with a dedicated expert who helps refine your approach, guides you through challenges, and personalizes your plan." />
+          <Feature title="Custom Meal Plans" text="Get flexible, data-backed meal ideas that fit your needs, lifestyle, and preferences — and evolve as you do." />
+        </div>
       </div>
     </div>
   );
 };
+
+// Feature component for reusability
+const Feature = ({ title, text }) => (
+  <div className="border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition">
+    <h3 className="text-xl font-semibold mb-2">{title}</h3>
+    <p className="text-gray-700">{text}</p>
+  </div>
+);
 
 export default AboutPage;

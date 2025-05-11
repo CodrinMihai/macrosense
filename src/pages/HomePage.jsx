@@ -25,7 +25,7 @@ const HomePage = () => {
           <img
             src="/images/health-1-logo.png"
             alt="Hero Visual"
-            className="w-full rounded-xl shadow-md animate-fade-in"
+            className="w-full max-w-md mx-auto rounded-xl shadow-md animate-fade-in"
           />
         </div>
       </div>
@@ -37,7 +37,7 @@ const HomePage = () => {
             <img
               src="/images/health-2-logo.png"
               alt="How It Works"
-              className="w-full rounded-xl shadow animate-fade-in"
+              className="w-full max-w-sm mx-auto rounded-xl shadow animate-fade-in"
             />
           </div>
           <div className="w-full md:w-1/2 text-left">
@@ -93,7 +93,7 @@ const HomePage = () => {
             <img
               src="/images/health-3-logo.png"
               alt="What is MacroSense"
-              className="w-full rounded-xl shadow animate-fade-in"
+              className="w-full max-w-md mx-auto rounded-xl shadow-md animate-fade-in"
             />
           </div>
         </div>
@@ -106,7 +106,7 @@ const HomePage = () => {
             <img
               src="/images/maps-bucharest.jpg"
               alt="MacroSense Location - Bucharest"
-              className="w-full rounded-xl shadow-md animate-fade-in"
+              className="w-full max-w-xs mx-auto rounded-xl shadow-md animate-fade-in"
             />
           </div>
           <div className="w-full md:w-1/2 text-center md:text-left">
